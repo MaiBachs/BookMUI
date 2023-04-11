@@ -17,7 +17,7 @@ function SelectBook(props) {
         const fetchData = async () => {
             const token = localStorage.getItem('token');
             let rep;
-            if (input == null || input == '') {
+            if (input === null || input === '') {
                 rep = await axios.get('http://localhost:8082/getAllBook', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
@@ -43,7 +43,7 @@ function SelectBook(props) {
 
     const handleSelectedBooks = (event, bookName) => {
         for (let i = 0; i < bookList.length; i++) {
-            if (bookList[i].bookName == bookName) {
+            if (bookList[i].bookName === bookName) {
                 bookList[i].quatity = Number(event.target.value);
             }
         }

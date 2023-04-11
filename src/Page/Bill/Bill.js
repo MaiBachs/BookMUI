@@ -115,7 +115,7 @@ function Bill() {
                     email: '',
                 });
                 setSelectedBooks([]);
-                if (Object.keys(response.data).length == 0) {
+                if (Object.keys(response.data).length === 0) {
                     alert('Vui lòng thanh toán cho hóa đơn lần trước');
                 } else {
                     alert('Ghị nợ thành công');
