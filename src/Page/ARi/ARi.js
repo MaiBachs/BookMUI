@@ -15,10 +15,9 @@ const cx = classNames.bind(styles);
 function ARi() {
     const [customers, setCustomers] = useState([]);
     const [choiceCustomer, setChoiceCustomer] = useState({});
-    const [input, setInput] = useState();
+    const [input, setInput] = useState('');
     const [modalShow, setModalShow] = React.useState(false);
     const token = localStorage.getItem('token');
-    const [customers1, setCustomers1] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {

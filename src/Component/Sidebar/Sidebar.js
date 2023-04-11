@@ -1,7 +1,7 @@
 import styles from './Sidebar.module.scss';
 import classNames from 'classnames/bind';
 import { VscFolderLibrary } from 'react-icons/vsc';
-import { AiFillHome, AiOutlineFileSearch, AiOutlineAreaChart, AiFillNotification } from 'react-icons/ai';
+import { AiFillHome, AiOutlineFileSearch, AiFillNotification } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { RiBillFill } from 'react-icons/ri';
 import { FaRegMoneyBillAlt } from 'react-icons/fa';

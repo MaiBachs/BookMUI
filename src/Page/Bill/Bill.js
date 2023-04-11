@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Bill.module.scss';
 import DefaultLayout from '../../Layout/DefaultLayout/DefaultLayout';
@@ -216,6 +216,8 @@ function Bill() {
                                             <td>{item.quatity}</td>
                                         </tr>
                                     );
+                                } else {
+                                    return null;
                                 }
                             })}
                         </tbody>

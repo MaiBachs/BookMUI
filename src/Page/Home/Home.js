@@ -37,11 +37,6 @@ function Home() {
     const options = {
         plugins: {
             legend: {
-                labels: {
-                    font: {
-                        size: 16,
-                    },
-                },
                 position: 'bottom',
                 display: true,
                 align: 'start',
@@ -49,6 +44,9 @@ function Home() {
                     color: '#ffffff',
                     boxWidth: 20,
                     usePointStyle: true,
+                    font: {
+                        size: 16,
+                    },
                 },
             },
         },

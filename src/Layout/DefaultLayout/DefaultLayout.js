@@ -1,4 +1,3 @@
-import Sidebar from '../../Component/Sidebar/Sidebar.js';
 import classNames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';
 import Sidebar1 from '../../Component/Sidebar/Sidebar1.js';
