@@ -23,13 +23,13 @@ function ARi() {
     useEffect(() => {
         const fetchData = async () => {
             let rep;
-            if (input == null || input == '') {
+            if (input === null || input === '') {
                 rep = await axios.get('http://localhost:8082/getAllCustomer', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
             } else {
                 let a = customers.filter(
-                    (customer) => customer.arInvoiceEntityList.length > 0 && customer.customerPhone == input,
+                    (customer) => customer.arInvoiceEntityList.length > 0 && customer.customerPhone === input,
                 );
                 if (Object.keys(a).length > 0) {
                     setCustomers(a);
