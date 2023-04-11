@@ -1,0 +1,41 @@
+.Modal{
+    background-color: white;
+    border-radius: 5px;
+    .Modal-body{
+        overflow-y: hidden;
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            
+            .wrapper-table{
+                overflow-y: scroll;
+                display: flex;
+                justify-content: center;
+                .table{
+                    border-collapse: collapse;
+                    background-color: rgb(255, 255, 255, 0.1);
+                    border-radius: 10px;
+                    tr{
+                        display: flex;
+                        justify-content: start;
+                        td{
+                            
+                            align-items: center;
+
+                            h4{
+                                font-size: 18px;
+                                margin-right: 50px;
+                                text-align: end;
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .Modal-Footer{
+    }
+    
+}

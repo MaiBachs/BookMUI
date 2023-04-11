@@ -1,0 +1,70 @@
+// Import file SCSS của bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Định nghĩa lại biến $sidebar-menu-toggle-padding-x
+$sidebar-menu-toggle-padding-x: $navbar-toggler-padding-x !default;
+
+// Import file SCSS của react-bootstrap-sidebar-menu
+@import '~react-bootstrap-sidebar-menu/dist/sidebar-menu.scss';
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding-left: 12px;
+    .logo{
+        h1{
+            display: flex;
+            align-items: center;
+            .book-logo{
+                font-size: 80px;
+                display: flex;
+                margin-right: 20px;
+            }
+        }
+    }
+    .content{
+        padding-left: 0px;
+        .ul{
+            list-style: none;
+            padding-left: 8px;
+            li{
+                display: flex;
+                align-items: center;
+                height: 60px;
+                .link{
+                    text-decoration: none;
+                    color: white;
+                }
+                .home{
+                    font-size: 40px;
+                    margin-right: 20px;
+                }
+                .search{
+                    font-size: 40px;
+                    margin-right: 20px;
+                }
+                .bill{
+                    font-size: 40px;
+                    margin-right: 20px;
+                }
+                .ari{
+                    font-size: 40px;
+                    margin-right: 20px;
+                }
+                .import{
+                    font-size: 40px;
+                    margin-right: 20px;
+                }
+                .Rules{
+                    font-size: 40px;
+                    margin-right: 20px;
+                    color: white;
+                }
+                .logout{
+                    font-size: 40px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

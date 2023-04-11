@@ -1,0 +1,17 @@
+.wrapper{
+    display: flex;
+    width: 1450px;
+    border-radius: 25px;
+    width: 100%;
+    .sidebar{
+        width: 380px;
+        max-height:  100%;
+        border-radius: 25px;
+        border-right: 0px white solid;
+    }
+    .content{
+        padding: 30px;
+        height: 650px;
+        width: 100%;
+    }
+}

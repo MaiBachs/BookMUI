@@ -1,0 +1,106 @@
+.wrapper{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .business{
+        padding-top: 20px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        .revenue{
+            height:45%;
+            width: 20%;
+            background-color: rgba(250, 250, 250, 0.2);
+            border-radius: 8px;
+            border: 3px rgb(220, 143, 1) solid;
+            display: flex;
+            flex-direction: column;
+            span{
+                margin-top: 4px;
+                font-size: 18px;
+                color: rgb(225, 53, 5);
+                font-weight: 1000px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                font-size: 18px;
+                color: rgb(220, 143, 1) ;
+                max-height: 50%;max-width: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 1px;
+                .dola{
+                    font-size: 40px;
+                }
+            }
+        }
+        .profit{
+            height:45%;
+            width: 20%;
+            background-color: rgba(250, 250, 250, 0.2);
+            border-radius: 8px;
+            border: 3px rgb(220, 143, 1) solid;
+            display: flex;
+            flex-direction: column;
+            span{
+                margin-top: 4px;
+                font-size: 18px;
+                color: rgb(225, 53, 5);
+                font-weight: 1000px;
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                font-size: 18px;
+                color: rgb(220, 143, 1) ;
+                max-height: 50%;max-width: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 1px;
+                .dola{
+                    font-size: 40px;
+                }
+            }
+        }
+        .customerNumber{
+            height:45%;
+            width: 20%;
+            background-color: rgba(250, 250, 250, 0.2);
+            border-radius: 8px;
+            border: 3px rgb(220, 143, 1) solid;
+            display: flex;
+            flex-direction: column;
+            span{
+                margin-top: 4px;
+                font-size: 18px;
+                color: rgb(225, 53, 5);
+                font-weight: 1000px;
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                font-size: 18px;
+                color: rgb(220, 143, 1) ;
+                max-height: 50%;max-width: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 1px;
+                .dola{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    .bar{
+        max-width: 600px;
+        max-height: 400px;
+    }
+}
