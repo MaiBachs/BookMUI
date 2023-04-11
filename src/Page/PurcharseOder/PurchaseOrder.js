@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './PurchaseOrder.module.scss';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import DefaultLayout from '../../Layout/DefaultLayout/DefaultLayout';
 import Button from 'react-bootstrap/Button';
 import { HiOutlinePlusSm } from 'react-icons/hi';

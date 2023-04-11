@@ -14,7 +14,7 @@ function Book() {
         const token = localStorage.getItem('token');
         const fetchData = async () => {
             let rep;
-            if (input == null || input == '') {
+            if (input == null || input === '') {
                 rep = await axios.get('http://localhost:8082/getAllBook', {
                     headers: { Authorization: `Bearer ${token}` },
                 });

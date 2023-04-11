@@ -36,7 +36,7 @@ function OrderDetails(props) {
     };
 
     const handleConfirm = () => {
-        let check = Object.values(form).every((value) => value != '');
+        let check = Object.values(form).every((value) => value !== '');
         if (check === false) {
             alert('Vui lòng nhập đầy đủ thông tin');
             return props.setModalShow(true);

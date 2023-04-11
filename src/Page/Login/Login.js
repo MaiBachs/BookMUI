@@ -20,14 +20,6 @@ function Login() {
         });
     };
 
-    const callAPI = () => {
-        return axios({
-            method: 'POST',
-            url: `http://localhost:8082/api/v1/auth/login`,
-            data: account,
-        });
-    };
-
     const handleLogin = () => {
         axios
             .post('http://localhost:8082/api/v1/auth/login', {
@@ -46,11 +38,11 @@ function Login() {
         <MDBContainer fluid className="p-3 my-5 h-custom">
             <MDBRow>
                 <MDBCol col="10" md="6">
-                    <img
+                    {/* <img
                         src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
                         class="img-fluid"
                         alt="Sample image"
-                    />
+                    /> */}
                 </MDBCol>
 
                 <MDBCol col="4" md="6">
