@@ -14,7 +14,7 @@
 }
 
 .App-header {
-    background-image: url("E:\BookManagerment\BookMUI\src\assets\image\background_app.jpg");
+    background-image: url("./assets/image/background_app.jpg");
     background-size: cover;
     min-height: 100vh;
     display: flex;
