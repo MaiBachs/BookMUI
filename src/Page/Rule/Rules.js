@@ -22,7 +22,7 @@ function Rules() {
         const token = localStorage.getItem('token');
         console.log(token);
         axios
-            .get('http://localhost:8082/findAllRule', { headers: { Authorization: `Bearer ${token}` } })
+            .get('https://host.up.railway.app/findAllRule', { headers: { Authorization: `Bearer ${token}` } })
             .then((response) => setRules(response.data))
             .catch((error) => console.log(error));
     }, []);

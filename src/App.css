@@ -14,7 +14,7 @@
 }
 
 .App-header {
-    background-color: rgb(0 ,0, 0, 0.7);
+    background-image: url("./assets/image/background_app.jpg");
     background-size: cover;
     min-height: 100vh;
     display: flex;

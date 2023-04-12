@@ -23,7 +23,7 @@ function ARi() {
         const fetchData = async () => {
             let rep;
             if (input === null || input === '') {
-                rep = await axios.get('http://localhost:8082/getAllCustomer', {
+                rep = await axios.get('https://host.up.railway.app/getAllCustomer', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
             } else {

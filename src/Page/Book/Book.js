@@ -15,12 +15,12 @@ function Book() {
         const fetchData = async () => {
             let rep;
             if (input == null || input === '') {
-                rep = await axios.get('http://localhost:8082/getAllBook', {
+                rep = await axios.get('https://host.up.railway.app/getAllBook', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
             } else {
                 rep = await axios.post(
-                    'http://localhost:8082/getBookByName',
+                    'https://host.up.railway.app/getBookByName',
                     { bookName: input },
                     { headers: { Authorization: `Bearer ${token}` } },
                 );

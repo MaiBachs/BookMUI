@@ -7,6 +7,8 @@ import { HiOutlinePlusSm } from 'react-icons/hi';
 import OrderDetails from './OrderDetails.js';
 import { BsTrash3 } from 'react-icons/bs';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const cx = classNames.bind(styles);
 
@@ -21,9 +23,11 @@ function PurchaseOrder() {
         order.forEach((data) => {
             const token = localStorage.getItem('token');
             axios
-                .post('http://localhost:8082/purchaseorder', data, { headers: { Authorization: `Bearer ${token}` } })
+                .post('https://host.up.railway.app/purchaseorder', data, {
+                    headers: { Authorization: `Bearer ${token}` },
+                })
                 .then((response) => {
-                    console.log(response);
+                    alert('Nhập hàng thành công');
                 })
                 .catch((error) => {
                     console.log(error);

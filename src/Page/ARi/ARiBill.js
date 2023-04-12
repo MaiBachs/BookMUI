@@ -16,7 +16,7 @@ function ARiBill(props) {
     const handleConfirm = () => {
         axios
             .post(
-                'http://localhost:8082/arinvoice',
+                'https://host.up.railway.app/arinvoice',
                 {
                     id: props.choiceCustomer.arInvoiceEntityList[0].id,
                     paid: paid,
@@ -27,7 +27,7 @@ function ARiBill(props) {
             )
             .then((response) => {
                 axios
-                    .get('http://localhost:8082/getAllCustomer', {
+                    .get('https://host.up.railway.app/getAllCustomer', {
                         headers: { Authorization: `Bearer ${token}` },
                     })
                     .then((response) => {

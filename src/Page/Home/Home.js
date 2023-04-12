@@ -55,10 +55,20 @@ function Home() {
     useEffect(() => {
         const fetchData = async () => {
             const token = localStorage.getItem('token');
-            let rep = await axios.get('http://localhost:8082/pagebusiness', {
+            let rep = await axios.get('https://host.up.railway.app/pagebusiness', {
                 headers: { Authorization: `Bearer ${token}` },
             });
-            setHome(rep.data[0]);
+            if (rep.data.length == 0) {
+                setHome({
+                    totalDebtBook: '',
+                    totalDebtCustomer: '',
+                    revenue: '',
+                    profit: '',
+                    customerNumber: '',
+                });
+            } else {
+                setHome(rep.data[0]);
+            }
         };
         fetchData();
     }, []);

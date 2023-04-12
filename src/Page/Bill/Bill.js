@@ -50,7 +50,7 @@ function Bill() {
         }, 0);
         axios
             .post(
-                'http://localhost:8082/bill',
+                'https://host.up.railway.app/bill',
                 {
                     ...form,
                     payments: payments,
@@ -97,7 +97,7 @@ function Bill() {
         }
         axios
             .post(
-                'http://localhost:8082/bill',
+                'https://host.up.railway.app/bill',
                 {
                     ...form,
                     tob: tob,
