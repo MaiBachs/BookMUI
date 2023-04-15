@@ -4,33 +4,34 @@
     width: 100%;
     .top{
         display: flex;
-        flex-direction: row;
+        margin-bottom: 20px;
         h3{
-            color: #0d6efd;
-            margin-left: 105px;
+            color: antiquewhite;
         }
         Button{
-            margin-left: 51%;
+            margin-left: 69.8%;
+            height: 50%;
         }
     }
     .mid{
         display: flex;
         justify-content: center;
         .wrapper-table{
-            margin: 20px 20px;
-            width: 900px;
+            margin-right: 7px;
+            width: 100%;
             max-height: 590px;
             overflow-y: scroll;
             display: flex;
             justify-content: center;
+            padding: 0;
             .table{
+                width: 100%;
                 border-collapse: collapse;
                 background-color: rgb(255, 255, 255, 0.1);
                 border-radius: 10px;
                 thead{
                     position: sticky;
                     top: 0;
-                    border-radius: 10px;
                     th{
                         font-size: 20px;
                         height: 60px;
@@ -59,9 +60,6 @@
         display: flex;
         flex-direction: row;
         justify-content: end;
-        Button{
-            margin-right: 135px;
-        }
         input{
             border-radius: 5px;
             color: #0d6efd;

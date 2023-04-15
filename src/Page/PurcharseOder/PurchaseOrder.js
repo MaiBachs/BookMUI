@@ -55,18 +55,18 @@ function PurchaseOrder() {
                 </div>
                 <div className={cx('mid')}>
                     <div className={cx('wrapper-table')}>
-                        <table className={cx('table')}>
-                            <thead>
+                        <table class="table">
+                            <thead class="thead-dark">
                                 <tr>
-                                    <th>Tên sách</th>
-                                    <th>Tác giả</th>
-                                    <th>Thể loai</th>
-                                    <th>Số lượng</th>
-                                    <th>Đơn giá</th>
-                                    <th></th>
+                                    <th scope="col">Tên sách</th>
+                                    <th scope="col">Tác giả</th>
+                                    <th scope="col">Thể loai</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Đơn giá</th>
+                                    <th scope="col">Xóa</th>
                                 </tr>
                             </thead>
-                            <tbody className={cx('tbody')}>
+                            <tbody className="body">
                                 {order.map((item) => {
                                     return (
                                         <tr key={item.id} className={cx('tr')}>
